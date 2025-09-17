@@ -37,7 +37,7 @@ const FlashCardForm = ({ onSubmit, onCancel, initialData }) => {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500 text-gray-800"
           placeholder="Enter the question"
           required
         />
@@ -51,7 +51,7 @@ const FlashCardForm = ({ onSubmit, onCancel, initialData }) => {
           type="text"
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500 text-gray-800"
           placeholder="Enter the answer"
           required
         />
