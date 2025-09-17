@@ -37,7 +37,7 @@ const FlashCardForm = ({ onSubmit, onCancel, initialData }) => {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500"
           placeholder="Enter the question"
           required
         />
@@ -51,7 +51,7 @@ const FlashCardForm = ({ onSubmit, onCancel, initialData }) => {
           type="text"
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder:text-gray-500"
           placeholder="Enter the answer"
           required
         />
@@ -60,17 +60,15 @@ const FlashCardForm = ({ onSubmit, onCancel, initialData }) => {
         <motion.button
           type="button"
           onClick={onCancel}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-4 py-2 rounded bg-gray-300 hover:bg-gray-400 transition-colors"
+
+          className="px-4 py-2 rounded border border-purple-600 hover:bg-purple-600 hover:text-white duration-300 transition cursor-pointer"
         >
           Cancel
         </motion.button>
         <motion.button
           type="submit"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700 transition-colors"
+
+          className="px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700 transition duration-300 cursor-pointer"
         >
           Save
         </motion.button>

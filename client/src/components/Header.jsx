@@ -3,7 +3,7 @@ import { FaBrain } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="bg-white/10 backdrop-blur-md shadow-lg">
+    <header className="bg-gradient-to-r from-purple-400  to-pink-500 backdrop-blur-md shadow-lg">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-center">
           <FaBrain className="text-white text-3xl mr-3" />

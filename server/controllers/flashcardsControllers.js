@@ -5,7 +5,7 @@ export const getFlashcards = async (req, res) => {
   try {
     const flashcards = await Flashcard.find();
     res.json(flashcards);
-    console.log("Hello");
+    
     
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -22,7 +22,7 @@ export const createFlashcard = async (req, res) => {
     const newFlashcard = new Flashcard({ question, answer });
     const savedFlashcard = await newFlashcard.save();
     res.status(201).json(savedFlashcard);
-    console.log("Hello 2");
+    
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
